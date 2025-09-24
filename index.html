@@ -7,11 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      --accent-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-      --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-      --warm-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-      --dark-gradient: linear-gradient(135deg, #434343 0%, #000000 100%);
+      --primary-gradient: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      --accent-gradient: linear-gradient(135deg, #ff8a00 0%, #e65100 100%);
+      --success-gradient: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+      --warm-gradient: linear-gradient(135deg, #ffab00 0%, #ff6d00 100%);
+      --dark-gradient: linear-gradient(135deg, #bf360c 0%, #e65100 100%);
       --glass-bg: rgba(255, 255, 255, 0.1);
       --glass-border: rgba(255, 255, 255, 0.2);
       --text-light: rgba(255, 255, 255, 0.9);
@@ -129,7 +129,7 @@
       font-size: clamp(3rem, 8vw, 6rem);
       font-weight: 700;
       margin-bottom: 20px;
-      background: linear-gradient(45deg, #fff, #f093fb, #fee140);
+      background: linear-gradient(45deg, #fff, #ff8a00, #ffab00);
       background-size: 200% 200%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -169,8 +169,8 @@
 
     .hero-image:hover {
       transform: scale(1.05);
-      border-color: #f093fb;
-      box-shadow: var(--shadow-strong), 0 0 60px rgba(240, 147, 251, 0.4);
+      border-color: #ff8a00;
+      box-shadow: var(--shadow-strong), 0 0 60px rgba(255, 138, 0, 0.4);
     }
 
     /* Scrolling Marquee */
@@ -318,7 +318,7 @@
     .form-group input:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #f093fb;
+      border-color: #ff8a00;
       background: rgba(255, 255, 255, 0.15);
     }
 
@@ -338,7 +338,7 @@
       top: -10px;
       left: 15px;
       font-size: 0.8rem;
-      color: #f093fb;
+      color: #ff8a00;
       background: var(--primary-gradient);
       padding: 0 10px;
       border-radius: 5px;
@@ -482,13 +482,13 @@
   <div class="particles" id="particles"></div>
 
   <!-- Navigation -->
-  <!-- <nav>
+  <nav>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav> -->
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero-section" id="home">
@@ -655,12 +655,12 @@
         
         // Animate button
         button.textContent = 'Sending...';
-        button.style.background = 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)';
+        button.style.background = 'linear-gradient(135deg, #ff9800 0%, #ff5722 100%)';
         
         // Simulate form submission
         setTimeout(() => {
           button.textContent = 'Message Sent! ✅';
-          button.style.background = 'linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%)';
+          button.style.background = 'linear-gradient(135deg, #4caf50 0%, #8bc34a 100%)';
           
           // Reset form
           form.reset();
@@ -668,7 +668,7 @@
           // Reset button after delay
           setTimeout(() => {
             button.textContent = originalText;
-            button.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
+            button.style.background = 'linear-gradient(135deg, #ff8a00 0%, #e65100 100%)';
           }, 3000);
         }, 2000);
       });
@@ -751,7 +751,7 @@
           position: fixed;
           width: 6px;
           height: 6px;
-          background: radial-gradient(circle, rgba(240,147,251,0.8) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(255,138,0,0.8) 0%, transparent 70%);
           border-radius: 50%;
           pointer-events: none;
           z-index: 9999;
